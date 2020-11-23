@@ -1,77 +1,93 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  font-family: Gotham Rounded, sans-serif;
-  font-weight: normal;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+  margin: auto;
+	margin-top: 10vh;
+  max-width: 90%;
+}
+
+.header-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	margin: 30px;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	color: white;
+	margin: 30px;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  background: linear-gradient(
-			to right top,
-			#d16ba5,
-			#c777b9,
-			#ba83ca,
-			#aa8fd8,
-			#9a9ae1,
-			#8aa7ec,
-			#79b3f4,
-			#69bff8,
-			#52cffe,
-			#41dfff,
-			#46eefa,
-			#5ffbf1
-		);
+	padding: 0;
+	margin: 0;
+	background: #202036;
 }
 
 .calculator-grid {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  min-height: 100vh;
-  grid-template-columns: repeat(4, 100px);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  padding: 50px;
+  padding-top: 5vh;
 }
 
 .calculator-grid > button {
-  cursor: pointer;
-  font-size: 2rem;
-  border: 1px solid white;
-  outline: none;
-  background-color: rgba(255, 255, 255, .75);
+	cursor: pointer;
+	font-size: 2rem;
+	border: 1px solid white;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.75);
 }
 
 .calculator-grid > button:hover {
-  background-color: rgba(255, 255, 255, .9);
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .calculator-grid > button:active {
-  background-color: rgba(227,27,109, 0.75);
-  transition: 0.6s ease;
+	background-color: rgba(227, 27, 109, 0.75);
+	transition: 0.6s ease;
 }
 
 .span-two {
-  grid-column: span 2;
+	grid-column: span 2;
 }
 
 .output {
-  grid-column: 1 / -1;
-  background-color: rgba(0, 0, 0, .75);
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 10px;
-  word-wrap: break-word;
-  word-break: break-all;
+	grid-column: 1 / -1;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
 }
 
 .output #previous-operand {
-  color: rgba(255, 255, 255, .75);
-  font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 1.5rem;
 }
 
 .output #current-operand {
-  color: white;
-  font-size: 2.5rem;
+	color: white;
+	font-size: 2.5rem;
 }
