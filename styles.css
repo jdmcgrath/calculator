@@ -13,9 +13,9 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-  margin: auto;
-	margin-top: 10vh;
-  max-width: 90%;
+	margin: auto;
+	margin: 5vh;
+	max-width: 90%;
 }
 
 .header-img {
@@ -44,9 +44,7 @@ body {
 	justify-content: center;
 	align-content: center;
 	grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-  padding: 50px;
-  padding-top: 5vh;
+	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .calculator-grid > button {
