@@ -1,3 +1,5 @@
+<img src="https://jdmcgrath.github.io/calculator/assets/images/calculator.svg" width="150"/>
+
 #  Calculator
 
 Whether you're at school and you need to use a calculator for a math test, or at a restaurant and need to whip out a calculator for splitting the bill with your date, our **calculator** is here for you. <br /> Made to be a better version of the iPhone calculator (hire me apple). <br /><br /> Build one yourself, it's great for: 
