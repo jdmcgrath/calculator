@@ -16,8 +16,10 @@ class Calculator {
   }
 
   appendNumber(number) {
-    if (number === '.' && this.currentOperand.includes('.')) return
-    this.currentOperand = this.currentOperand.toString() + number.toString()
+    if (number === '.' && this.currentOperand.includes('.')) return;
+		else if (this.currentOperand.length < 10) {
+			this.currentOperand = this.currentOperand.toString() + number.toString();
+		} else return;
   }
 
   chooseOperation(operation) {
